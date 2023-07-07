@@ -29,7 +29,8 @@ body {
   min-height: 100%;
 }
 
-h1 {
+h1,
+h2 {
   font-family: source-serif-pro, serif;
   font-weight: 700;
   color: var(--asphalt);
@@ -37,6 +38,17 @@ h1 {
 
 p {
   color: var(--asphalt);
+}
+
+p::first-letter {
+  font-size: 32px;
+}
+
+a[class~='snip']::before {
+  content: '\2190';
+  vertical-align: -2px;
+  margin: 2px 2px 0px 0px;
+  font-size: 1.75em;
 }
 
 li:hover {
